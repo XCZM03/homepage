@@ -20,7 +20,7 @@
         <!-- 公安备案 -->
         <a v-if="siteIcp" href="https://beian.mps.gov.cn/" target="_blank">
           &amp;
-          {{ siteIcp }}
+          {{ sitegongan }}
         </a>
       </div>
       <div v-else class="lrc">
