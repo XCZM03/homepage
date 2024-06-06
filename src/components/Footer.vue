@@ -19,6 +19,8 @@
         </span>
         <!-- 公安备案 -->
         <a v-if="sitegongan" href="https://beian.mps.gov.cn/#/query/webSearch?code=51150302000159" target="_blank">
+          &amp;
+          {{ sitegongan}}
         </a>
       </div>
       <div v-else class="lrc">
