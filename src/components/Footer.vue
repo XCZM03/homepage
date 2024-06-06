@@ -18,7 +18,8 @@
         </a>
         </span>
         <!-- 公安备案 -->
-        <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51150302000159" rel="noreferrer" target="_blank">川公网安备51150302000159</a>
+        <a v-if="sitegongan" href="https://beian.mps.gov.cn/#/query/webSearch?code=51150302000159" target="_blank">
+        </a>
       </div>
       <div v-else class="lrc">
         <Transition name="fade" mode="out-in">
@@ -44,6 +45,7 @@ const fullYear = new Date().getFullYear();
 // 加载配置数据
 const siteStartDate = ref(import.meta.env.VITE_SITE_START);
 const siteIcp = ref(import.meta.env.VITE_SITE_ICP);
+const siteIcp = ref(import.meta.env.VITE_SITE_gongan);
 const siteAnthor = ref(import.meta.env.VITE_SITE_ANTHOR);
 const siteUrl = computed(() => {
   const url = import.meta.env.VITE_SITE_URL;
