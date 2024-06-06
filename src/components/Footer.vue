@@ -12,10 +12,12 @@
           <a :href="siteUrl">{{ siteAnthor }}</a>
         </span>
         <!-- 站点备案 -->
-        <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
-          &amp;
-          {{ siteIcp }}
-        </a>
+        <span>
+          <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
+            &nbsp;
+            {{ siteIcp }}
+          </a>
+        </span>   
         <span>
           <a>
             &nbsp;&nbsp;&nbsp;
@@ -27,7 +29,7 @@
           <a v-if="siteWA" href="https://beian.mps.gov.cn/#/query/webSearch?code=51150302000159" rel="noreferrer" target="_blank">
             {{ siteWA }}
           </a>
-        </a>
+        </span>
       </div>
       <div v-else class="lrc">
         <Transition name="fade" mode="out-in">
@@ -57,7 +59,7 @@ const siteWA = ref(import.meta.env.VITE_SITE_WA);
 const siteAnthor = ref(import.meta.env.VITE_SITE_ANTHOR);
 const siteUrl = computed(() => {
   const url = import.meta.env.VITE_SITE_URL;
-  if (!url) return "https://www.xczm.icu";
+  if (!url) return "https://www.imsyy.top";
   // 判断协议前缀
   if (!url.startsWith("http://") && !url.startsWith("https://")) {
     return "//" + url;
