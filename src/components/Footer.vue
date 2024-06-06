@@ -16,6 +16,12 @@
           &amp;
           {{ siteIcp }}
         </a>
+        <span>
+          <a>
+            &nbsp;&nbsp;&nbsp;
+            <img src="/images/logo01.png" style="width: 16px;">
+          </a>
+        <span>
         </span>
           &nbsp;
           <a v-if="siteWA" href="https://beian.mps.gov.cn/#/query/webSearch?code=51150302000159" rel="noreferrer" target="_blank">
